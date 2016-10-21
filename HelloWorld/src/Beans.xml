@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+  <!-- 
+  		Configurando o Bean 
+  		O Beans.xml é usa diferentes IDs de assinatura unicoa para diferentes beans 
+  		e para controle na criação de objetos com diferentes valores sem afetar qualquer 
+  		aquivos fontes do Spring.
+  -->
+  <bean id="helloWorld" class="com.tutorialspoint.springframework.helloworld.HelloWorld">
+       <!--  aqui passamos o nome da variavel que está na class e SETAMOS uma valor para ela. -->
+       <property name="message" value="Hello World"/>
+  </bean>
+
+</beans>
