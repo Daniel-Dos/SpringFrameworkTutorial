@@ -38,7 +38,7 @@ import org.springframework.web.context.support.XmlWebApplicationContext;
  *
  */
 public class MainApp {
- public static void main(String[] args) {
+ public static void main(String[] args) { 
     ApplicationContext context = new FileSystemXmlApplicationContext("/src/Beans.xml");
     
     HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
