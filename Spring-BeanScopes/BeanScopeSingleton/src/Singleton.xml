@@ -5,6 +5,6 @@
 
 
 	<bean id="helloWorld"
-		class="com.tutorialspoint.beanscope.singleton.HelloWorld" scope="singleton">
+		class="com.tutorialspoint.springframework.beanscope.singleton.HelloWorld" scope="singleton">
 	</bean>
 </beans>
