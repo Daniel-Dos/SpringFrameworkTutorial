@@ -8,22 +8,23 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MainApp {
 	public static void main(String[] args) {
-		
+
 		/*
-		 *  {@link ClassPathXmlApplicationContext} , está api carrega o arquivo de
-		 *  configuração dos beans e eventualmente baseando na Provider API.
+		 *  {@link ClassPathXmlApplicationContext} , estï¿½ api carrega o arquivo de
+		 *  configuraï¿½ï¿½o dos beans e eventualmente baseando na Provider API.
 		 *  Nisto ela cria e inicializa TODOS os objetos em que os beans foram mencionados
-		 *  no arquivo de configuração.
+		 *  no arquivo de configuraï¿½ï¿½o.
 		 */
-		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-		
+        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
 		/*
 		 *  Cria um novo Objeto, recuperando o Bean passado no 
-		 *  context do XML e instanciando. O metodo getBean é usado para 
+		 *  context do XML e instanciando. O metodo getBean ï¿½ usado para 
 		 *  retornar o objeto generico o seu ID do bean. Uma vez que tenhamos 
 		 *  um objeto, podemos usar esse objeto ara chamar qualquer metodo da classe. 
 		 */
-		HelloWorld obj = (HelloWorld) context.getBean("helloWorld"); 
-		obj.getMessage(); // Exibe a Menssagem.
+
+        HelloWorld obj = (HelloWorld) context.getBean("helloWorld"); 
+        obj.getMessage(); // Exibe a Menssagem.
 	}
 }
