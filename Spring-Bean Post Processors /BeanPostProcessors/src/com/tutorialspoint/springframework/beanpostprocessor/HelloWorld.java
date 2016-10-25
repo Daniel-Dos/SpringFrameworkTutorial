@@ -7,7 +7,7 @@ package com.tutorialspoint.springframework.beanpostprocessor;
  */
 public class HelloWorld {
 
-	private String message;
+    private String message;
 
     public void setMessage(String message) { 
         this.message = message;
