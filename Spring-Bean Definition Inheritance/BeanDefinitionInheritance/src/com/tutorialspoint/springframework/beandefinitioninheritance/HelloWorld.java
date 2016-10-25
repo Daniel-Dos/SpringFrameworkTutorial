@@ -7,4 +7,5 @@ package com.tutorialspoint.springframework.beandefinitioninheritance;
  */
 public class HelloWorld {
 	private String message;
+	
 }
