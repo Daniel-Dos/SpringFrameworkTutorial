@@ -6,6 +6,10 @@ package com.tutorialspoint.springframework.beandefinitioninheritance;
  * daniel.dias.analistati@gmail.com
  */
 public class HelloWorld {
-	private String message;
-	
+    
+    private String message;
+
+    public void setMessage(String message) {
+	this.message = message;
+    }
 }
