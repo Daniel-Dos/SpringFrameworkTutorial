@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<!-- Quando definimos "helloWorld" bean, que tem duas proprieda message1 e message2.
+	 Enquanto o helloBrasil bean,  foi definido como filho de bean helloWorld usando 
+	 o atributo <i>parent</i>. O bean filho herda a propriede message2 como é, substitui a
+	 message1 e introduz uma propriedade a mais a message3.
+	 -->
+	
+	<!--  bean helloWorld -->
+	<bean id="helloWorld"
+		class="com.tutorialspoint.springframework.beandefinitioninheritance.HelloWorld">
+		<property name="message1" value="Hello World !" />
+		<property name="message2" value="Hello Secong World !" />
+	</bean>
+	
+	<!-- bean helloBrasil -->
+	
+	<bean id="helloBrasil"
+		class="com.tutorialspoint.springframework.beandefinitioninheritance.HelloBrasil"
+		parent="helloWorld">
+		<property name="message1" value="Hello Brasil !"></property>
+		<property name="message3" value="Olá Brasil !"></property>
+	</bean>
+</beans>
