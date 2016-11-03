@@ -19,10 +19,39 @@
 	
 	<!-- bean helloBrasil -->
 	
+	
 	<bean id="helloBrasil"
 		class="com.tutorialspoint.springframework.beandefinitioninheritance.HelloBrasil"
 		parent="helloWorld">
 		<property name="message1" value="Hello Brasil !"></property>
 		<property name="message3" value="Olá Brasil !"></property>
 	</bean>
+	 
+	 
+	<!-- 
+	Bean Definition Template 
+	
+	Podemos criar um bean definition templeate, que pode ser usado por outro child bean definiton
+	sem colocar muito esforço. Enquanto define um bean definition template, não podemos especificar o 
+	atributo class e podemos especificar o atributo abstrato com um valor de true como monstrado abaixo.
+	
+	O parent bean nao pode ser instanciado sozinho porquer está incompleto, e isso tambem 
+	explicitamente marcado como abstrato. Quando uma definição é abstrata como está, é usada 
+	somente como um puro template bean definition que serve como definição pai para definiçoes filhos.
+
+	
+	
+	<bean id="beanTemplate" abstract="true">
+	<property name="message1" value="Hello World!" />
+	<property name="message2" value="Hello Second World!" />
+	<property name="message3" value="Olá Brasil" />
+	</bean>
+	
+	<bean id="helloBrasil" class="com.tutorialspoint.springframework.beandefinitioninheritance.HelloBrasil" 
+	parent="beanTemplate">
+	   <property name="message1" value="Hello World!" />
+	   <property name="message3" value="Olá Brasil!"/>
+	
+	</bean>
+	-->
 </beans>
