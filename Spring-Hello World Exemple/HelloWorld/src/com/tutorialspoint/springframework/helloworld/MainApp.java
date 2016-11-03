@@ -18,13 +18,13 @@ public class MainApp {
         ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 
 		/*
-		 *  Cria um novo Objeto, recuperando o Bean passado no 
-		 *  context do XML e instanciando. O metodo getBean � usado para 
-		 *  retornar o objeto generico o seu ID do bean. Uma vez que tenhamos 
-		 *  um objeto, podemos usar esse objeto ara chamar qualquer metodo da classe. 
+		 *  Cria um novo Objeto, recuperando o Bean passado no
+		 *  context do XML e instanciando. O metodo getBean � usado para
+		 *  retornar o objeto generico o seu ID do bean. Uma vez que tenhamos
+		 *  um objeto, podemos usar esse objeto ara chamar qualquer metodo da classe.
 		 */
 
-        HelloWorld obj = (HelloWorld) context.getBean("helloWorld"); 
+        HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
         obj.getMessage(); // Exibe a Menssagem.
 	}
 }

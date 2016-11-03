@@ -1,6 +1,6 @@
 package com.tutorialspoint.springframework.beanscope.singleton;
 
-public class HelloWorld {	
+public class HelloWorld {
     private String message;
 
     public void setMessage(String message) {
@@ -8,6 +8,6 @@ public class HelloWorld {
     }
 
     public void getMessage() {
-        System.out.println("Your Message : " + message);	   
+        System.out.println("Your Message : " + message);	
     }
 }
