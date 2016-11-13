@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+ <!-- Definição para bean textEditor -->
+	<bean id="textEditor"
+		class="com.tutoriralspoint.springframework.setterbased.TextEditor">
+		<property name="spellChecker" ref="spellChecker" />
+	</bean>
+
+ <!-- Definição para bean spellChecker -->	
+	<bean id="spellChecker"
+		class="com.tutoriralspoint.springframework.setterbased.SpellChecker">
+	</bean>
+</beans>
