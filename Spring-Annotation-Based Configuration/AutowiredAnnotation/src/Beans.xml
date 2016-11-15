@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:annotation-config />
+
+
+<!--  @Autowired no metodo Setter 
+	<bean id="textEditor"
+		class="com.tutorialspoint.springframework.annotation.autowired.settermethods.TextEditor">
+	</bean>
+	
+	<bean id="spellChecker"
+		class="com.tutorialspoint.springframework.annotation.autowired.settermethods.SpellChecker">
+	</bean>
+	-->
+	
+	<!-- @Autowired na propriedade 
+	<bean id="textEditor" 
+	class="com.tutorialspoint.springframework.annotation.autowired.properties.TextEditor">
+	</bean>
+	
+	<bean id="spellChecker"
+	class="com.tutorialspoint.springframework.annotation.autowired.properties.SpellChecker">
+	</bean>
+	
+	-->
+	
+	<!--  @Autowired no construtor 
+	<bean id="textEditor" 
+	class="com.tutorialspoint.springframework.annotation.autowired.constructors.TextEditor">
+	</bean>
+
+<bean id="spellChecker"
+class="com.tutorialspoint.springframework.annotation.autowired.constructors.SpellChecker">
+</bean>
+-->
+
+<!-- @Autowired with required= false  -->
+<bean id="student"
+class="com.tutorialspoint.springframework.annotation.autowired.required.Student">
+
+<property name="name" value="Daniel" />
+
+<!--  <property name="age" value="25" /> -->
+</bean>
+
+</beans>

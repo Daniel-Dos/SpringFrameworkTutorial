@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:annotation-config />
+
+				<!-- Definindo bean para student -->
+				<bean id="student" class="com.tutorialspoint.springframework.annotation.required.Student">
+				
+				<property name="name" value="Zara"/>
+				
+				<!-- Sem passar o Age e checando o resultado -->
+				<property name="age" value="11" />
+				</bean>
+</beans>
