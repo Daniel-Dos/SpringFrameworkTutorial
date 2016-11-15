@@ -10,5 +10,4 @@ public class A {
 	public void messageA() {
 		System.out.println("A");
 	}
-
 }
