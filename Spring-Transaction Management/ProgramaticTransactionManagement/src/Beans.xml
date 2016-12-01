@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<!-- Initizalization for data Source -->
+<bean id="dataSource"
+class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+<property name="url" value="jdbc:oracle:thin:@192.168.1.102:1521:xe"/>
+<property name="username" value="System"/>
+<property name="password" value="akatsuki"/>
+
+</bean>
+
+<!-- Initialization for TransactionManager -->
+<bean id="transactionManager"
+class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+
+<property name="dataSource" ref="dataSource" />
+
+</bean>
+
+<bean id="studentJDBCTemplate"
+class="com.tutorialspoint.springframework.transactionmanagement.programatictransactionmanagement.StudentJDBCTemplate">
+
+<property name="dataSource" ref="dataSource" />
+<property name="transactionManager" ref="transactionManager"/>
+</bean>
+</beans>
