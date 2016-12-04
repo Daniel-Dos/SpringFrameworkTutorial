@@ -5,7 +5,7 @@
 <title>Listando Country </title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></head>
-
+<!-- <script type="text/javascript" src="recursos/Hello.js"></script> -->
     <body>
 
     <h2>Contact Listing</h2>
@@ -21,7 +21,7 @@
     <button id="fetchContacts" class="btn btn-default" type="submit">Button</button>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="recursos/Hello.js"> </script>
+    <script type="text/javascript" src="recursos/Hello.js"></script>
     
 </body>
 </html>
