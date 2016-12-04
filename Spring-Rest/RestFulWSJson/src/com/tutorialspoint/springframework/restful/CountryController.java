@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CountryController {
 
-	@RequestMapping(value = "/countries", method = RequestMethod.GET, headers="accept=application/xml") 
+	@RequestMapping(value = "/countries", method = RequestMethod.GET, headers="accept=application/json") 
 	public List<Country> getCountries() {
 		List<Country> listOfContries = new ArrayList<>();
 		listOfContries = createCountryList();
