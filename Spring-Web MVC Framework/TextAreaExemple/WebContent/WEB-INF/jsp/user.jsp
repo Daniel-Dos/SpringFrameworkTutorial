@@ -14,7 +14,7 @@
 				<td><form:input path="username" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="password"> Age </form:label></td>
+				<td><form:label path="password"> PassWord </form:label></td>
 				<td><form:password path="password" /></td>
 			</tr>
 			<tr>
